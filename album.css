@@ -1,0 +1,45 @@
+
+
+.nav-title{
+  font-weight: bold;
+  font-size: 40px;
+
+}
+
+.nav-image{
+  padding: 0;
+  margin-right: 15px;
+  width: 90px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+
+.div-content{
+  margin: 0px 0px;
+}
+
+.img-fluid{
+  width: 1680px;
+  height: auto;
+}
+
+.font-lg{
+  font-size: 60px;
+}
+
+.div-bodymg{
+  position: absolute;
+  top: 140px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.div-title
+{
+  font-size: 30px;
+}
+
+.div-about{
+  line-height: 2rem;
+}

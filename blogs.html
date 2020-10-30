@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link href="album.css" rel="stylesheet">
+</head>
+<body>
+      
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <span><image src="./images/OIP.jpeg" class="nav-image"></image></span>
+    <a class="navbar-brand nav-title" href="index.html">Birds Gallery</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="about.html">About</a>
+        <a class="nav-item nav-link active" href="blogs.html">Blogs</a>
+        <a class="nav-item nav-link" href="contactus.html">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <main role="main" class="container pt-3">
+    <div class="jumbotron p-5">
+      <h1 class="pb-3">New Blog</h1>
+      <div class="form-label-group">
+          <div class="row pb-3">
+                <div class="col-sm-4 col-md-2 col-lg-2">
+                    Blog Title:
+                </div>          
+                <div class="col-sm-4 col-md-6 col-lg-6">
+                    <input type="text" id="input_blogname" class="form-control" placeholder="Title" autofocus>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <span class="alert alert-danger" id="span_title" style="display: none">Title is required.</span>
+                </div>
+        </div>
+
+        <div class="row pb-3">
+            <div class="col-sm-4 col-md-2 col-lg-2">
+                Description:
+            </div>          
+            <div class="col-sm-4 col-md-6 col-lg-6">
+                <textarea class="form-control" id="blog_desc" rows="4"></textarea>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+              <span class="alert alert-danger" id="span_desc" style="display: none">Desc is required.</span>
+          </div>
+        </div>
+
+        <div class="row pb-3">
+            <div class="col-sm-4 col-md-2 col-lg-2">
+                Upload Image:
+            </div>          
+            <div class="col-sm-4 col-md-6 col-lg-6 ml-3">
+                <input type="file" class="custom-file-input" id="blog_img">
+                <label class="custom-file-label" for="customFileLang">Upload</label>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+              <span class="alert alert-danger" id="span_img" style="display: none">Title is required.</span>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-8 col-md-8 col-lg-8 offset-4">
+                <input type="submit" value="Submit" class="btn btn-primary" onclick="AddBlog()">
+            </div>          
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <div class="container">
+
+      <div class="form-label-group">
+          <div class="row">
+            <ul id="myList">
+              <li>
+                  <div>
+                  <div class="font-weight-bolder div-title" >Blog 1
+                    <span class="ml-5"> <input type="button" value="Delete" class="btn btn-danger delete"></span>
+                  </div>
+                 
+                  <img src="images/bird3.jpeg" class="offset-4"> 
+                  <p class="text-justify mt-3">
+                    When the “Beast from the East” rolled through Great Britain a few weeks ago it brought both dismay and delight to those housebound people peering out at their gardens smothered in metres of snow.
+                    Birds – sometimes of species almost never seen in towns – were everywhere. Twitter (no pun intended) was filled with images of desperate animals.
+                  </p> 
+                </div>
+                
+              </li>
+              <li>
+                  
+                <div>
+                  <div class="font-weight-bolder div-title">Blog 2
+                    <span class="ml-5"> <input type="button" value="Delete" class="btn btn-danger delete"></span>
+                  </div>
+                  <img src="images/bird1.jpg" class="offset-4"> 
+                  <p class="text-justify mt-3">It’s long been thought that birds are one of the few leftovers of the ancient beasts that we know as dinosaurs. 
+                    Fossils have revealed that many dinosaurs were covered in feathers and that their skeletal structures share a lot with those of birds we see 
+                    today. As it turns out, none of this is coincidence and genetics gives us the ability to draw hard links between extinct species and animals 
+                    that we see all around us right now.
+                  </p> 
+                  
+                </div>
+              
+
+              </li>
+
+              <li>
+                <div>
+                  <div class="font-weight-bolder div-title">Blog 3
+                    <span class="ml-5"> <input type="button" value="Delete" class="btn btn-danger delete"></span>
+                  </div>
+          
+                  <img src="images/bird3.jpg" class="offset-4" id="div-blogimg"> 
+                 
+                  <div class="text-justify mt-3">Our pride in our bird selection is evident upon your first visit.  We’ve devoted a large amount of space 
+                    and interactive environments so you may see and play with our birds in the most natural setting possible.  
+                    Our cast of characters range from the tiny finch family to the majestic macaws.
+
+
+                  </div> 
+                 
+                </div>
+              </li>
+          </ul>
+          </div>
+      </div>
+
+  </div>
+
+<script src="./myscript.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
